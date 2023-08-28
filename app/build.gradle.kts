@@ -1,6 +1,7 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("org.jetbrains.kotlin.kapt")
 }
 
 android {
@@ -67,5 +68,15 @@ dependencies {
 
     //Truth
     testImplementation("com.google.truth:truth:1.1.3")
+
+    //ViewModel
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1")
+
+    //LiveData
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.6.1")
+
+    //annotationProcessor
+    implementation("androidx.lifecycle:lifecycle-compiler:2.6.1")
+
 
 }
