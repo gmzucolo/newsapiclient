@@ -75,8 +75,11 @@ dependencies {
     //LiveData
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.6.1")
 
-    //annotationProcessor
+    //AnnotationProcessor
     implementation("androidx.lifecycle:lifecycle-compiler:2.6.1")
 
+    //Hilt
+    implementation("com.google.dagger:hilt-android:2.38.1")
+    implementation("com.google.dagger:hilt-android-gradle-plugin:2.38.1")
 
 }

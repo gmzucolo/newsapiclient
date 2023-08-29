@@ -12,9 +12,9 @@ import org.junit.Test
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-class NewsApiServiceTest {
+class NewsAPIServiceTest {
     private lateinit var server: MockWebServer
-    private lateinit var apiService: NewsApiService
+    private lateinit var apiService: NewsAPIService
 
     @Before
     fun setUp() {
@@ -23,7 +23,7 @@ class NewsApiServiceTest {
             .baseUrl(server.url(""))
             .addConverterFactory(GsonConverterFactory.create())
             .build()
-            .create(NewsApiService::class.java)
+            .create(NewsAPIService::class.java)
     }
 
     private fun enqueueMockResponse(
