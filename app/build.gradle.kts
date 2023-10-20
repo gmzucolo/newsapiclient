@@ -10,6 +10,7 @@ android {
 
     buildFeatures {
         buildConfig = true
+        viewBinding = true
     }
 
     defaultConfig {
@@ -81,5 +82,9 @@ dependencies {
     //Hilt
     implementation("com.google.dagger:hilt-android:2.38.1")
     implementation("com.google.dagger:hilt-android-gradle-plugin:2.38.1")
+
+    //Navigation
+    implementation("androidx.navigation:navigation-fragment-ktx:2.3.2")
+    implementation("androidx.navigation:navigation-ui-ktx:2.3.2")
 
 }
